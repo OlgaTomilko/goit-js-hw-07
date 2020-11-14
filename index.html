@@ -13,6 +13,19 @@
       #gallery img {
         width: 80%;
 }
+
+#validation-input {
+  border: 3px solid #bdbdbd;
+}
+
+#validation-input.valid {
+  border-color: #4caf50;
+}
+
+#validation-input.invalid {
+  border-color: #f44336;
+}
+
     </style>
     <title>Document</title>
 </head>
@@ -62,11 +75,19 @@
 
       <input type="text" placeholder="Ваше имя?" id="name-input" />
 <h1>Привет, <span id="name-output">незнакомец</span>!</h1>
+
+<input
+  type="text"
+  id="validation-input"
+  data-length="6"
+  placeholder="Введи 6 символов"
+/>
    
       <script type="module" src="task-1_7.js"></script>
       <script type="module" src="task-2_7.js"></script>
       <script type="module" src="task-3_7.js"></script>
       <script type="module" src="task-4_7.js"></script>
       <script type="module" src="task-5_7.js"></script>
+      <script type="module" src="task-6_7.js"></script>
 </body>
 </html>
