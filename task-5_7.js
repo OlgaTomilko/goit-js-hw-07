@@ -8,5 +8,6 @@ const output = document.querySelector('#name-output');
 input.addEventListener('input', onInputChange);
 
 function onInputChange(event) {
+ event.currentTarget.value === '' ?  output.textContent = 'незнакомец' :
     output.textContent = event.currentTarget.value;
   };
